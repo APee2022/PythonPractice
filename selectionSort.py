@@ -1,0 +1,19 @@
+
+# learn the method of selection sort on GFG website
+# selection sort is work on minimum value technique.
+def sort(nums):
+    for i in range(5):
+        minpos = i
+        for j in range(i,6):
+            minpos = j
+
+        temp = nums[i]
+        nums[i] = nums[minpos]
+        nums[minpos] = temp
+
+        #print(nums)
+
+nums = [5,3,8,6,7,2]
+sort(nums)
+
+print(nums)
